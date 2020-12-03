@@ -9,12 +9,13 @@ app = App(
 
 # Listens to incoming messages that contain "hello"
 @app.command("/presentarms")
-def message_hello(ack, say, command):
+def message_salute(ack, say, command, message):
     ack()
 
     # say() sends a message to the channel where the event was triggered
     say(f":salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:")
     say(f":salute:")
+    say(f"<@{message['user']}>")
     say(f"\\\n   PRESENT ARMS!")
 
 # Start your app
