@@ -15,8 +15,10 @@ def message_salute(ack, say, command, message):
     # say() sends a message to the channel where the event was triggered
     say(f":salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:")
     say(f":salute:")
-    say(f"<@{message['user']}>")
     say(f"\\\n   PRESENT ARMS!")
+    
+def message_ping(message, say):
+    say(f"<@{message['user']}>")
 
 # Start your app
 if __name__ == "__main__":
