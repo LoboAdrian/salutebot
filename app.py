@@ -21,13 +21,15 @@ def corgi_salute(ack, say, command, message):
 
     say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:salute:")
     say(f"LONG LIVE THE MILITARY OF THE CORGI STATES")
-
+    
 @app.command("/turtlesalute")
-def turtle(ack, say, command, message):
+def corgi_salute(ack, say, command, message):
     ack()
 
     say(f":soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
     say(f"LONG LIVE THE TURTLE SQUAD")
+
+
 
 
 # Start your app
