@@ -59,6 +59,13 @@ def rust_salute(ack, say, command, message):
 
     say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi:")
     say(f"CORGI SQUAD REPORTING FOR DUTY")
+    
+@app.command("/corgie")
+def rust_salute(ack, say, command, message):
+    ack()
+
+    say(f":corgispartan:")
+    say(f"CORGI SPARTAN REPORTING FOR DUTY")
 
 
 # Start your app
