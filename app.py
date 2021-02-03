@@ -13,8 +13,14 @@ def message_salute(ack, say, command, message):
     ack()
 
     # say() sends a message to the channel where the event was triggered
-    say(f":salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:")
-    say(f":salute:")
+    say(f":salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute:")
+
+@app.command("/corgisalute")
+def corgi_salute(ack, say, command, message):
+    ack()
+
+    say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi:")
+
 
 # Start your app
 if __name__ == "__main__":
