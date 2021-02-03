@@ -27,7 +27,7 @@ def turtle(ack, say, command, message):
     ack()
 
     say(f":soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
-say(f"LONG LIVE THE TURTLE SQUAD")
+    say(f"LONG LIVE THE TURTLE SQUAD")
 
 
 # Start your app
