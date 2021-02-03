@@ -29,6 +29,12 @@ def turtle_salute(ack, say, command, message):
     say(f":soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
     say(f"LONG LIVE THE TURTLE SQUAD")
 
+@app.command("/gophersalute")
+def gopher_salute(ack, say, command, message):
+    say(f":bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:salute:")
+    say(f"LONG LIVE THE GOPHER ARMY")
+
+
 # Start your app
 if __name__ == "__main__":
     app.start(port=int(os.environ.get("PORT", 3000)))
