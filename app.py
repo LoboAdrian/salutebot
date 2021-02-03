@@ -20,7 +20,6 @@ def corgi_salute(ack, say, command, message):
     ack()
 
     say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:salute:")
-    say(f"LONG LIVE THE MILITARY OF THE CORGI STATES")
 
 
 # Start your app
