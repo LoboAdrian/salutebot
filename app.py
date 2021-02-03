@@ -31,6 +31,8 @@ def turtle_salute(ack, say, command, message):
 
 @app.command("/gophersalute")
 def gopher_salute(ack, say, command, message):
+    ack()
+
     say(f":bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:salute:")
     say(f"LONG LIVE THE GOPHER ARMY")
 
