@@ -37,6 +37,14 @@ def gopher_salute(ack, say, command, message):
     say(f"LONG LIVE THE GOPHER ARMY")
 
 
+@app.command("/rustsalute")
+def rust_salute(ack, say, command, message):
+    ack()
+
+    say(f":ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:salute:")
+    say(f"LONG LIVE THE RUST ARMY")
+
+
 # Start your app
 if __name__ == "__main__":
     app.start(port=int(os.environ.get("PORT", 3000)))
