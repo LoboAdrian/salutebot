@@ -24,6 +24,8 @@ def corgi_salute(ack, say, command, message):
 
 @app.command("turtlesalute")
 def turtle_salute(ack, say, command, message):
+    ack()
+
     say(f":soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
 
 # Start your app
