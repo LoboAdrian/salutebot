@@ -70,8 +70,8 @@ def rust_salute(ack, say, command, message):
 @app.command("/tux")
 def tux_salute(ack, say, command, message):
     ack()
-    say(((':tux: ' *10) +'\n') * 5)
-    say("I USE ARCH BTW")
+    say(((f':tux: ' *10) +'\n') * 5)
+    say(f"I USE ARCH BTW")
 
 # Start your app
 if __name__ == "__main__":
