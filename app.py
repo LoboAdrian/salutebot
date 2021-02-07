@@ -79,8 +79,7 @@ def tux_salute(ack, say, command, message):
 def salute(ack, say, command):
   ack()
 
-  say(((f"{command['text']} " * 7) + '\n') * 3)
-  say(f":salute:")
+  say(((f"{command['text']} " * 7) + '\n') * 3 + ':salute:')
 
 # Start your app
 if __name__ == "__main__":
