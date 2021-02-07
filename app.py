@@ -75,6 +75,13 @@ def tux_salute(ack, say, command, message):
     say(f":salute:")
     say(f"I USE ARCH BTW")
 
+@app.command("/salute")
+def salute(ack, say, command):
+  ack()
+
+  say(((f"{command['text']} " * 7) + '\n') * 3)
+  say(f":salute:")
+
 # Start your app
 if __name__ == "__main__":
     app.start(port=int(os.environ.get("PORT", 3000)))
