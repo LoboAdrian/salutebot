@@ -71,7 +71,8 @@ def corgi_spartan(ack, say, command, message):
 def tux_salute(ack, say, command, message):
     ack()
 
-    say(((f':linux: ' *10) +'\n') * 5)
+    say(((f':linux: ' *7) +'\n') * 3)
+    say(f":salute:")
     say(f"I USE ARCH BTW")
 
 # Start your app
