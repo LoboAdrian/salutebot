@@ -7,20 +7,13 @@ app = App(
     signing_secret=os.environ.get("SLACK_SIGNING_SECRET")
 )
 
-# Listens to incoming messages that contain "hello"
-@app.command("/presentarms")
-def message_salute(ack, say, command, message):
-    ack()
 
-    # say() sends a message to the channel where the event was triggered
-    say(f":salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute::salute::salute::salute::salute::salute::salute:\n:salute:")
+@app.command("/salute")
+def salute(ack, say, command):
+  ack()
 
-@app.command("/corgisalute")
-def corgi_salute(ack, say, command, message):
-    ack()
+  say(((f"{command['text']} " * 7) + '\n') * 3 + ':salute:')
 
-    say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:corgi::corgi::corgi::corgi::corgi::corgi::corgi:\n:salute:")
-    say(f"LONG LIVE THE CORGI STATES")
 
 @app.command("/turtlesalute")
 def turtle_salute(ack, say, command, message):
@@ -29,57 +22,6 @@ def turtle_salute(ack, say, command, message):
     say(f":yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
     say(f"LONG LIVE THE TURTLE SQUAD")
 
-@app.command("/gophersalute")
-def gopher_salute(ack, say, command, message):
-    ack()
-
-    say(f":bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:bongo: :gopher: :gopher: :gopher: :gopher: :gopher: :gopher:\n:salute:")
-    say(f"LONG LIVE THE GOPHER ARMY")
-
-
-@app.command("/rustsalute")
-def rust_salute(ack, say, command, message):
-    ack()
-
-    say(f":ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:ferrisbongo: :ferris: :ferris: :ferris: :ferris: :ferris: :ferris:\n:salute:")
-    say(f"LONG LIVE THE RUST ARMY")
-    
-
-@app.command("/corgifireteam")
-def corgi_fireteam(ack, say, command, message):
-    ack()
-
-    say(f":corgi::corgi::corgi::corgi:")
-    say(f"CORGI FIRETEAM REPORTING FOR DUTY, WE SERVE THE CORGI ARMY OF THE CORGI STATES")
-    
-    
-@app.command("/corgisquad")
-def corgi_squad(ack, say, command, message):
-    ack()
-
-    say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi:")
-    say(f"CORGI SQUAD REPORTING FOR DUTY")
-    
-@app.command("/corgispartan")
-def corgi_spartan(ack, say, command, message):
-    ack()
-
-    say(f":corgi:")
-    say(f"CORGI SPARTAN REPORTING FOR DUTY")
-    
-@app.command("/tuxsalute")
-def tux_salute(ack, say, command, message):
-    ack()
-
-    say(((f':linux: ' *7) +'\n') * 3)
-    say(f":salute:")
-    say(f"I USE ARCH BTW")
-
-@app.command("/salute")
-def salute(ack, say, command):
-  ack()
-
-  say(((f"{command['text']} " * 7) + '\n') * 3 + ':salute:')
 
 # Start your app
 if __name__ == "__main__":
