@@ -46,7 +46,7 @@ def rust_salute(ack, say, command, message):
     
 
 @app.command("/corgifireteam")
-def rust_salute(ack, say, command, message):
+def corgi_fireteam(ack, say, command, message):
     ack()
 
     say(f":corgi::corgi::corgi::corgi:")
@@ -54,23 +54,24 @@ def rust_salute(ack, say, command, message):
     
     
 @app.command("/corgisquad")
-def rust_salute(ack, say, command, message):
+def corgi_squad(ack, say, command, message):
     ack()
 
     say(f":corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi::corgi:")
     say(f"CORGI SQUAD REPORTING FOR DUTY")
     
 @app.command("/corgispartan")
-def rust_salute(ack, say, command, message):
+def corgi_spartan(ack, say, command, message):
     ack()
 
     say(f":corgi:")
     say(f"CORGI SPARTAN REPORTING FOR DUTY")
     
-@app.command("/tux")
+@app.command("/tuxsalute")
 def tux_salute(ack, say, command, message):
     ack()
-    say(((f':tux: ' *10) +'\n') * 5)
+
+    say(((f':linux: ' *10) +'\n') * 5)
     say(f"I USE ARCH BTW")
 
 # Start your app
