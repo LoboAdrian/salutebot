@@ -12,16 +12,15 @@ app = App(
 def salute(ack, say, command):
   ack()
 
-  if not command["channel"] == "C014NMUG013":
-    say(((f"{command['text']} " * 7) + '\n') * 3 + ':salute:')
+  say(((f"{command['text']} " * 7) + '\n') * 3 + ':salute:')
 
 
 @app.command("/turtlesalute")
 def turtle_salute(ack, say, command, message):
     ack()
-    if not command["channel"] == "C014NMUG013":
-        say(f":yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
-        say(f"LONG LIVE THE TURTLE SQUAD")
+
+    say(f":yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:yay-toitle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle: :soviet-turtle:\n:salute:")
+    say(f"LONG LIVE THE TURTLE SQUAD")
 
 
 # Start your app
